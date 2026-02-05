@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package>
+  <name>luh_youbot_gui</name>
+  <version>1.0.0</version>
+  <description>
+
+     The GUI can be used to manually control the manipulator and to manage predefined poses.
+
+  </description>
+  <maintainer email="info@luhbots.de">Simon Aden</maintainer>
+  <author>Simon Aden</author>
+  <license>BSD</license>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>libqt5gui5</build_depend>
+  <build_depend>luh_youbot_kinematics</build_depend>
+  <build_depend>roslib</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>actionlib</build_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>libqt5gui5</run_depend>
+  <run_depend>luh_youbot_kinematics</run_depend>
+  <run_depend>roslib</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>actionlib</run_depend>
+ 
+</package>

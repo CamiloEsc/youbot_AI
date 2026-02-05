@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>luh_laser_watchdog</name>
+  <version>1.0.0</version>
+  <description>The Laser Watchdog has two functions: 1. It filters velocity commands for the base to avoid collisions. 2. It reduces the laser scan data to four distance values (left, front, right and back). </description>
+
+  <maintainer email="info@luhbots.de">Simon Aden</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>image_transport</build_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>cv_bridge</run_depend>
+  <run_depend>image_transport</run_depend>
+
+</package>

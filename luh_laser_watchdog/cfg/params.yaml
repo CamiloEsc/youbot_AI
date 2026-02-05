@@ -1,0 +1,24 @@
+enable_on_startup: true
+
+target_frame: base_link
+footprint_width_y: 0.38
+footprint_width_x: 0.61
+laser_topics: [/scan, /scan_back]
+publish_frequency: 10.0
+num_points_for_mean: 10
+
+critical_time: 1.5
+sample_step: 0.1
+progression_factor: 1.1
+publish_visualisation: true
+safety_margin: 2
+
+concave_footprint: [[0.285, -0.19], [-0.285, -0.19], [-0.285, -0.05], [-0.36, -0.05], [-0.36, 0.05], [-0.285, 0.05], [-0.285, 0.19], [0.285, 0.19], [0.285, 0.05], [0.36, 0.05], [0.36, -0.05], [0.285, -0.05]]
+
+#safe velocity sampling
+enable_sampling: true
+num_sample_steps: 100
+angle_sample_step: 0.087266
+theta_sample_step: 0.05
+safe_velocity: 0.1
+frequency: 8 #Hz

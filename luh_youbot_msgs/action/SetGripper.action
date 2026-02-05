@@ -1,0 +1,7 @@
+# goal
+float32 gripper_width
+bool is_relative
+---
+# result
+---
+# feedback
