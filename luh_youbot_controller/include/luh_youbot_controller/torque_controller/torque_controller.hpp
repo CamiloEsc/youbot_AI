@@ -28,6 +28,7 @@
 #include <fstream>
 #include <string.h>
 #include <math.h>
+#include <vector>
 
 #include <ros/ros.h>
 #include <ros/package.h>
@@ -51,6 +52,8 @@ public:
     bool loadParameters();
 
 private:
+
+    double computeMpcAcceleration(double position_error, double velocity_error, unsigned int joint) const;
 
     ros::NodeHandle* node_;
 
@@ -80,6 +83,17 @@ private:
     std::vector <double> k_fr_n_3;
 
     double k_feed;
+
+    bool use_computed_torque_mpc_;
+    int mpc_horizon_steps_;
+    std::vector<double> mpc_q_pos_;
+    std::vector<double> mpc_q_vel_;
+    std::vector<double> mpc_r_torque_;
+    std::vector<double> mpc_terminal_q_pos_;
+    std::vector<double> mpc_terminal_q_vel_;
+    std::vector<double> observer_gain_;
+    std::vector<double> disturbance_estimate_;
+    std::vector<double> previous_torque_command_;
 
     double time_begin;
     double time_passed;
